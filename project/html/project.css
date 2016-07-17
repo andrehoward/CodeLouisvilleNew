@@ -1,0 +1,16 @@
+/* project.css */
+body {
+ background-color: #e0e0d1;
+ color:  #0d0d0d;
+}
+h1 {
+ color: ;
+ text-align: center;
+ font: italic 200% fantasy;
+}
+p {
+ background-color: #FFDBFF;
+ color: #333300;
+ text-align: center;
+ border: 3px groove #FFFF33;
+}

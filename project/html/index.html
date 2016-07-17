@@ -1,43 +1,52 @@
 <!doctype html>
 
 
-<html>
+<html ng-app = "myApp">
+
 <head>
-<title>
-My First Website! Andre Howard
-</title>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<title> Mozee Family Contact List </title>
+
+
 </head>
+  
+
 <body>
-<h1>Andre Howard</h1>
+	<div class = "container" ng-controller=AppCtrl">
+	<h1> Mozee Family Contact List </h1>
+		
+		
+		<table class = "table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Number</th>
+				</tr>
+		</thead>
+		
+		<tbody>
+			<tr ng-repeat="contact in contactlist">
+				<td>{{contact.name}}</td>
+				<td>{{contact.email}}</td>
+				<td>{{contact.number}}</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	
+	</div>
+<script src="controllers/controller.js"></script>
 
-<a href="http://www.google.com" title="This is a nice drone"><p><img src="Package_drone.jpg"/></P></a>
-<p>My Family tree!
-In the next few weeks I will begin to explore my family tree. My mother name is Doris Ann Woodford and her maiden name is Doris Ann Walker.</p>
-I'm already having a vision for this sight, but input is gratly appreciated.
-For now I will concentrate on my immediate family of my mother. hopefully this will build in time to capture my father side and there siblings.
-I will <strong>EXPLORE</strong> all informtion received. I hope this lead to something great for generations.
-<em>God! Family!</em>
-<h5>Freda Mozee is my mother's mother. My Grandmother. She had eight kids.</h5>
-
-<table>
-
-<th>Brothers and Sisters</th>
-<td>Pamela Woddford</td>
-<td>Stephanie Woodford</td>
-<td>James Woodford</td>
-<td>Andre Howard 47 June 5th 1969</td>
-
-</table>
-
-<p></p> 
-<b><</b>
-
-<a href="http://www.Google.com">Google!</a>
-<! --I'm now learning how to use link-->
-
-<a href="Page one.html">Page One</a>
-For Further information Email <a href="mailto:Andre' Howard">Andre' Howard</a>
-<a href="http://www.Google.com"& put title="Visit this website if you want to know something about Geneology.">Google Page</a>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 </body>
 </html>
 
